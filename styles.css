@@ -19,6 +19,7 @@ body {
   background-color: #f1f5f9;
   color: var(--dark);
   line-height: 1.6;
+  overflow-x: hidden !important;
 }
 
 .container {
@@ -682,5 +683,181 @@ footer {
 
   .footer-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+.partner-benefits {
+  position: relative;
+  background: url("./asset/am-i-doing-it-right-group-young-people-casual-clothes-working-modern-office.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  margin: 20px 0 40px 0;
+}
+
+.partner-benefits::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #815757;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.partner-benefits .container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  z-index: 2;
+}
+
+.partner-benefits .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.partner-benefits h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.partner-benefits p {
+  font-size: 18px;
+  color: #f2f2f2;
+}
+
+.partner-benefits .benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.partner-benefits .benefit-card {
+  background: #d18f8f;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.partner-benefits .benefit-card:hover {
+  transform: translateY(-10px);
+}
+
+.partner-benefits .benefit-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.partner-benefits .benefit-card p {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.partner-benefits .benefit-card a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #b57979;
+  border-radius: 5px;
+}
+
+.partner-benefits .benefit-card a:hover {
+  background-color: #9a6d6d;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .partner-benefits h2 {
+    font-size: 28px;
+  }
+
+  .partner-benefits p {
+    font-size: 16px;
+  }
+
+  .partner-benefits .benefits-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  .partner-benefits .benefit-card h3 {
+    font-size: 20px;
+  }
+
+  .partner-benefits .benefit-card p {
+    font-size: 14px;
+  }
+
+  .partner-benefits .benefit-card a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .partner-benefits h2 {
+    font-size: 24px;
+  }
+
+  .partner-benefits p {
+    font-size: 14px;
+  }
+
+  .partner-benefits .benefits-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .partner-benefits .benefit-card h3 {
+    font-size: 18px;
+  }
+
+  .partner-benefits .benefit-card p {
+    font-size: 13px;
+  }
+
+  .partner-benefits .benefit-card a {
+    font-size: 13px;
+    padding: 7px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .partner-benefits h2 {
+    font-size: 20px;
+  }
+
+  .partner-benefits p {
+    font-size: 12px;
+  }
+
+  .partner-benefits .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .partner-benefits .benefit-card h3 {
+    font-size: 16px;
+  }
+
+  .partner-benefits .benefit-card p {
+    font-size: 12px;
+  }
+
+  .partner-benefits .benefit-card a {
+    font-size: 12px;
+    padding: 6px 12px;
   }
 }
