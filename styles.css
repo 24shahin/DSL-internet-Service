@@ -187,7 +187,6 @@ nav {
 
 .how-it-works p {
   font-size: 16px;
-  /* margin-bottom: 20px; */
 }
 
 .steps {
@@ -632,7 +631,16 @@ footer {
   .nav-links {
     display: none;
   }
-
+  .flex {
+    flex-direction: column;
+  }
+  .how-it-works {
+    width: 100%;
+    margin-bottom: 28px;
+  }
+  .formpart {
+    width: 100%;
+  }
   .mobile-menu-btn {
     display: block;
   }
